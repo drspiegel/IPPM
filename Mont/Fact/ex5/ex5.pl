@@ -16,7 +16,6 @@ sub min ($$) {
 sub gcd ($$) {
     my ($n1, $n2) = @_;
     for (my $k = min($n1, $n2); $k > 1; $k--) {
-        last if ($k == 0);
         if ($n1 % $k == 0 and $n2 % $k == 0) {
             return $k; # gcd
         }
