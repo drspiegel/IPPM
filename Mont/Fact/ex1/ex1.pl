@@ -8,8 +8,8 @@ use Data::Dumper;
 use bigint;
 
 # Usage:
-#   %perl fact.pl 99
-#   %perl fact.pl 1763 4
+#   %perl ex1.pl 99
+#   %perl ex1.pl 1763 4
 
 #  2**99 =  633825300114114700748351602688
 # 2**100 = 1267650600228229401496703205376
