@@ -16,10 +16,8 @@ sub min ($$) {
 sub gcd ($$) {
     my ($n1, $n2) = @_;
     for (my $k = min($n1, $n2); $k > 1; $k--) {
-        last if ($k == 0);
         if ($n1 % $k == 0 and $n2 % $k == 0) {
             return $k; # gcd
-            #last;
         }
     }
     return 1;
@@ -27,9 +25,6 @@ sub gcd ($$) {
 
 sub isMutuallyCoprime {
     my @S = @_;
-    #return 1 if (scalar(@S) == 1);
-    #return 1 if (scalar(@S) == 2);
-    
     for (my $i = 0; $i <= $#S; $i++) {
         for (my $j = 0; $j <= $#S; $j++) {
             next if ($i == $j);
