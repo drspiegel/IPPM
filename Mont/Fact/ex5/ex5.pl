@@ -19,7 +19,6 @@ sub gcd ($$) {
         last if ($k == 0);
         if ($n1 % $k == 0 and $n2 % $k == 0) {
             return $k; # gcd
-            #last;
         }
     }
     return 1;
