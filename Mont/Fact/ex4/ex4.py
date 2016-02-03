@@ -13,13 +13,13 @@ if __name__ == "__main__":
         sys.exit(1)
     dr = eval(sys.argv[1])
     print("DR = eval('{0}') = {1}".format(sys.argv[1], dr))
-    pr = []
+    BASIS = []
     P = 1
     it = primesieve.Iterator()
     it.next_prime() # to ignore 2
 
     while (P < dr):
         pi = it.next_prime()
-        pr.append(str(pi))
+        BASIS.append(str(pi))
         P *= pi
-    print("P = {1} = {0}".format(P, ' * '.join(pr)))
+    print("P = {1} = {0}".format(P, ' * '.join(BASIS)))
