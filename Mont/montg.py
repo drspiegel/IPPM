@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import sys
 import random
 
 def bitsize (x): # return a bit size of a non-negative (>=0) integer number
@@ -127,3 +131,4 @@ for n in N:
     orig = pow(a, e) % n
     if v != orig:
         print("Error-B: n={0}; a={1}; e={2}; v={3}; orig={4};".format(n, a, e, v, orig))
+
