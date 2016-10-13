@@ -14,3 +14,6 @@ http://www.arithmetic-circuits.org/finite-field/vhdl_Models/chapter3_codes/VHDL/
 http://varadhan3n90.blogspot.ru/2014/06/bluespec-verilog-code-for-modified.html
 http://stackoverflow.com/questions/26702797/verilog-code-compiles-fine-but-simulation-does-not-run
 http://stackoverflow.com/questions/23687172/using-a-continous-assignment-in-a-verilog-procedure/23687699#23687699
+
+Neural networks
+https://habrahabr.ru/post/312450/
