@@ -1,0 +1,31 @@
+****************************************
+ Report : static timing
+         -path 1
+         -delay max
+         -type nworst
+         -transition_time
+         -capacitance
+ Design : s510
+ Version: STAN18.0.0.1
+ Date   : 18/21/03 13:05:04
+****************************************
+
+Startpoint: _277_/clk (internal path startpoint)
+Endpoint: csync (output port)
+Path Group: (none)
+Path Type: max
+
+Point                                      Cap        Trans      Incr       Path
+-------------------------------------------------------------------------------------
+_277_/clk (al_dffl)                                  0.050000   0.000000   0.000000 f
+_277_/q (al_dffl)                         0.161773   0.921080   1.781283   1.781283 f
+_161_/y (al_or2)                          0.022292   0.180667   1.489329   3.270613 f
+_162_/y (al_nand3ftt)                     0.130079   0.628922   1.486176   4.756788 r
+_200_/y (al_ao21)                         0.005544   0.073103   1.206831   5.963619 r
+_205_/y (al_nand3)                        0.000000   0.044047   0.735560   6.699179 f
+csync (out)                                          0.044047   0.000000   6.699179 f
+data arrival time                                                          6.699179
+-------------------------------------------------------------------------------------
+(Path is unconstrained)
+Path slack during path traversal = -6.699179 ERROR DETECTED !!!!
+

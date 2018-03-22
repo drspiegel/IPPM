@@ -1,0 +1,29 @@
+****************************************
+ Report : static timing
+         -path 1
+         -delay max
+         -type nworst
+         -transition_time
+         -capacitance
+ Design : vasya_s27
+ Version: STAN18.0.0.1
+ Date   : 18/22/03 13:06:40
+****************************************
+
+Startpoint: Q_reg/clk (internal path startpoint)
+Endpoint: G17 (output port)
+Path Group: (none)
+Path Type: max
+
+Point                                      Cap        Trans      Incr       Path
+-------------------------------------------------------------------------------------
+Q_reg/clk (al_dff)                                   0.050000   0.000000   0.000000 r
+Q_reg/q (al_dff)                          0.011157   0.115226   1.210295   1.210295 f
+U10/y (al_or3)                            0.011162   0.113498   1.044902   2.255197 f
+U11/y (al_oa21)                           0.005591   0.087738   0.745272   3.000469 f
+G17 (out)                                            0.087738   0.000000   3.000469 f
+data arrival time                                                          3.000469
+-------------------------------------------------------------------------------------
+(Path is unconstrained)
+Path slack during path traversal = -3.000469 ERROR DETECTED !!!!
+
