@@ -1,0 +1,35 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s1488
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:49 2018
+****************************************
+
+
+  Startpoint: _711_ (falling edge-triggered flip-flop)
+  Endpoint: v13_D_13 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _711_/clk (al_dffl)                         0.050000   0.000000   0.000000 f
+  _711_/q (al_dffl)                0.329060   1.812467   2.320671   2.320671 f
+  _385_/y (al_oai21ftt)            0.016697   0.147933   1.788889   4.109560 f
+  _386_/y (al_nand3fft)            0.005544   0.073096   0.806141   4.915701 r
+  _387_/y (al_ao21ftf)             0.011156   0.113476   0.803121   5.718822 f
+  _698_/y (al_nand2ft)             0.005549   0.073015   0.787950   6.506772 r
+  _701_/y (al_ao21)                0.005544   0.073106   0.991476   7.498248 r
+  _708_/y (al_nand3)               0.000000   0.044047   0.735561   8.233809 f
+  v13_D_13 (out)                              0.044047   0.000000   8.233809 f
+  data arrival time                                                 8.233809
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

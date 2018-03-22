@@ -1,0 +1,29 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s953
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:53 2018
+****************************************
+
+
+  Startpoint: _434_ (falling edge-triggered flip-flop)
+  Endpoint: ActBmHS1 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _434_/clk (al_dffl)                         0.050000   0.000000   0.000000 f
+  _434_/q (al_dffl)                0.000000   0.046095   1.162806   1.162806 f
+  ActBmHS1 (out)                              0.046095   0.000000   1.162806 f
+  data arrival time                                                 1.162806
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,31 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s27
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:49 2018
+****************************************
+
+
+  Startpoint: _16_ (falling edge-triggered flip-flop)
+  Endpoint: G17 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _16_/clk (al_dffl)                          0.050000   0.000000   0.000000 f
+  _16_/q (al_dffl)                 0.011191   0.115711   1.231264   1.231264 f
+  _07_/y (al_and3fft)              0.016796   0.149016   0.839433   2.070697 r
+  _11_/y (al_oai21ftf)             0.000000   0.044049   0.982080   3.052777 f
+  G17 (out)                                   0.044049   0.000000   3.052777 f
+  data arrival time                                                 3.052777
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

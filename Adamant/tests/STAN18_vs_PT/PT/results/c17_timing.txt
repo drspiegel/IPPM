@@ -1,0 +1,31 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : c17
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:47 2018
+****************************************
+
+
+  Startpoint: N3 (input port)
+  Endpoint: N22 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  input external delay                                   0.000000   0.000000 f
+  N3 (in)                          0.016693   0.050000   0.000000   0.000000 f
+  _2_/y (al_ao21ttf)               0.005576   0.078753   0.975436   0.975436 f
+  _3_/y (al_ao21ttf)               0.000000   0.044779   0.740312   1.715749 r
+  N22 (out)                                   0.044779   0.000000   1.715749 r
+  data arrival time                                                 1.715749
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

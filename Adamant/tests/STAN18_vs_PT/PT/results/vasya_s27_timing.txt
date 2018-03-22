@@ -1,0 +1,31 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : vasya_s27
+Version: C-2009.06-SP1
+Date   : Thu Mar 22 12:21:34 2018
+****************************************
+
+
+  Startpoint: Q_reg (rising edge-triggered flip-flop)
+  Endpoint: G17 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  Q_reg/clk (al_dff)                          0.050000   0.000000   0.000000 r
+  Q_reg/q (al_dff)                 0.011157   0.115218   1.210295   1.210295 f
+  U10/y (al_or3)                   0.011162   0.113498   1.044897   2.255192 f
+  U11/y (al_oa21)                  0.005591   0.087738   0.745273   3.000465 f
+  G17 (out)                                   0.087738   0.000000   3.000465 f
+  data arrival time                                                 3.000465
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

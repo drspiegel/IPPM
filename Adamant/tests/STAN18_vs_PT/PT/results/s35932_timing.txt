@@ -1,0 +1,34 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s35932
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:50 2018
+****************************************
+
+
+  Startpoint: _10759_ (falling edge-triggered flip-flop)
+  Endpoint: DATA_9_0 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _10759_/clk (al_dffl)                       0.050000   0.000000   0.000000 f
+  _10759_/q (al_dffl)              0.016727   0.150148   1.265128   1.265128 f
+  _04917_/y (al_and2ft)            0.005549   0.086853   0.973676   2.238804 r
+  _04919_/y (al_or2)               0.022290   0.156815   1.085633   3.324436 r
+  _04929_/y (al_nand3)             0.005559   0.078633   0.815601   4.140038 f
+  _04930_/y (al_nand3)             0.011139   0.101660   1.072874   5.212911 r
+  _04931_/y (al_and2)              0.000000   0.056178   0.966300   6.179212 r
+  DATA_9_0 (out)                              0.056178   0.000000   6.179212 r
+  data arrival time                                                 6.179212
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

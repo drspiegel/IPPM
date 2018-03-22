@@ -1,0 +1,32 @@
+****************************************
+ Report : static timing
+         -path 1
+         -delay max
+         -type nworst
+         -transition_time
+         -capacitance
+ Design : s35932
+ Version: STAN18.0.0.1
+ Date   : 18/21/03 13:05:07
+****************************************
+
+Startpoint: _10757_/clk (internal path startpoint)
+Endpoint: WX1213 (output port)
+Path Group: (none)
+Path Type: max
+
+Point                                      Cap        Trans      Incr       Path
+-------------------------------------------------------------------------------------
+_10757_/clk (al_dffl)                                0.050000   0.000000   0.000000 f
+_10757_/q (al_dffl)                       0.016727   0.150096   1.265128   1.265128 f
+_04887_/y (al_and2ft)                     0.005549   0.086853   0.973647   2.238775 r
+_04889_/y (al_or2)                        0.022290   0.156815   1.085633   3.324408 r
+_04899_/y (al_nand3)                      0.005559   0.078633   0.815601   4.140009 f
+_04900_/y (al_nand3)                      0.011139   0.101660   1.072874   5.212882 r
+_04901_/y (al_and2)                       0.000000   0.056178   0.966301   6.179183 r
+WX1213 (out)                                         0.056178   0.000000   6.179183 r
+data arrival time                                                          6.179183
+-------------------------------------------------------------------------------------
+(Path is unconstrained)
+Path slack during path traversal = -6.179183 ERROR DETECTED !!!!
+

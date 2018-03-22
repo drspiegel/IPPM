@@ -1,0 +1,77 @@
+	*****************************************************************
+	**
+	**      Tool:        Statistical Timing (ST)
+	**      Version:     STAN18.0.0.1
+	**      Created:     Mar 20 2018, 15:13:51
+	**      Author Team: MicroStyle, Moscow
+	**      Time:        18/21/03 13:05:00
+	**
+	*****************************************************************
+
+
+~~~ [18/21/03 13:05:00] Read ./lib/core_PtcV1.80T25.lib syn_library c432 ...
+--- [18/21/03 13:05:00] Reading ./lib/core_PtcV1.80T25.lib...
+--- [18/21/03 13:05:01] Reading is done. Elapsed time = 1 seconds
+--- [18/21/03 13:05:01] Checking technology library database...
+--- [18/21/03 13:05:01] Checking library "core_PtcV1.80T25"
+Note, No technology attribute specified in the library; the technology 'cmos' is assumed.
+Note, delay_model specified was table_lookup.
+Note, Using the cmos syntax tables...
+--- [18/21/03 13:05:01] Passed
+--- [18/21/03 13:05:01] Checking is done. Elapsed time = 0 seconds
+--- [18/21/03 13:05:01] Number of cells: 68
+~~~ [18/21/03 13:05:01] Fill library header parameters ...
+--- Upper slew threshold: 0.80
+--- Lower slew threshold: 0.20
+--- Input threshold (Rise): 0.40
+--- Input threshold (Fall): 0.60
+--- Output threshold (Rise): 0.40
+--- Output threshold (Fall): 0.60
+~~~ [18/21/03 13:05:01] Fill library units ...
+--- Technology libraries capacitance unit: 1.0e-12
+--- Technology libraries time unit: 1.0e-09
+--- Technology libraries nominal voltage: 1.800000
+~~~ [18/21/03 13:05:01] Copy delay tables into internal structures ...
+~~~ [18/21/03 13:05:01] Read ./verilog/c432.syn_y2.v verilog c432 ...
+~~~ [18/21/03 13:05:01] Parse Verilog ...
+--- [Stat] Number of skipped instances: 0
+--- [Stat] Number of unconnected pins: 0
+~~~ [18/21/03 13:05:01] Construct delay graph ...
+~~~ [18/21/03 13:05:01] Verilog reading has finished!
+--- [Stat] Number of nodes in timing graph: 147
+--- [Stat] Number of unique nodes in timing graph: 142
+--- [Stat] Number of edges in timing graph: 281
+--- [Stat] Number of inputs in timing graph: 36
+--- [Stat] Number of outputs in timing graph: 7
+--- [Stat] Number of wires in timing graph: 104
+~~~ [18/21/03 13:05:01] Fill sensitivity tables ...
+~~~ [18/21/03 13:05:01] Calcualte fanins & fanouts number ...
+--- [Stat] Number of non-inputs with zero fanin in timing graph: 0
+--- [Stat] Number of non-outputs with zero fanout in timing graph: 0
+--- [Stat] Number of unused edges: 0
+--- [Stat] Total number of sequential elements in verilog: 0
+--- [Stat] Number of different sequential elements used in verilog: 0
+--- [Stat] Number of different sequential elements in technology library: 24
+--- [Stat] Number of annotated RC: 0
+--- [Stat] RC annotation errors: 0
+~~~ [18/21/03 13:05:01] Starting Static Timing ...
+ST: Warning, Slope <Rise> for input <N30> wasn't set.
+Set default value (0.05000). No such messages will appear.
+--- [Stat] Total number of processed timing edges: 562
+--- [Stat] Total number of timing edges processed with ECSM: 0
+~~~ [18/21/03 13:05:01] Static timing complete! Time: 0.010 sec
+~~~ [18/21/03 13:05:01] Report timing max [./results/c432_timing.txt]
+~~~ [18/21/03 13:05:01] Starting report timing ...
+~~~ [18/21/03 13:05:01] Starting setup-hold shaking ...
+~~~ [18/21/03 13:05:01] Setup-hold shaking complete! Time: 0.000 sec
+~~~ [18/21/03 13:05:01] Report timing for primary outputs ...
+--- [Stat] Number of violated paths: 0 from 1
+~~~ [18/21/03 13:05:01] Report timing complete! Time: 0.000 sec
+~~~ [18/21/03 13:05:01] Starting report timing ...
+~~~ [18/21/03 13:05:01] Starting setup-hold shaking ...
+~~~ [18/21/03 13:05:01] Setup-hold shaking step was completed earlier! Skip it
+~~~ [18/21/03 13:05:01] Report timing for primary outputs ...
+--- [Stat] Number of violated paths: 0 from 1
+~~~ [18/21/03 13:05:01] Report timing complete! Time: 0.000 sec
+
+!!! Total number of warnings: 1

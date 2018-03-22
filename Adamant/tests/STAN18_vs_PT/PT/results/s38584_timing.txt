@@ -1,0 +1,43 @@
+Warning: Some timing arcs have been disabled for breaking timing loops
+	or because of constant propagation. Use the 'report_disable_timing'
+	command to get the list of these disabled timing arcs. (PTE-003)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s38584
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:52 2018
+****************************************
+
+
+  Startpoint: g35 (input port)
+  Endpoint: g34972 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  input external delay                                   0.000000   0.000000 r
+  g35 (in)                         8.897326   0.050000   0.000000   0.000000 r
+  _04645_/y (al_inv)               1.858434   9.934086   7.079929   7.079929 f
+  _04771_/y (al_ao21ftf)           0.005544   0.073082   3.728907   10.808836 r
+  _04772_/y (al_ao21ftf)           0.005591   0.078845   0.769381   11.578217 f
+  _04777_/y (al_nand3fft)          0.005577   0.078739   1.051661   12.629877 f
+  _04778_/y (al_nand2)             0.011087   0.101190   0.797335   13.427212 r
+  _04792_/y (al_nand3)             0.022343   0.180970   0.881646   14.308858 f
+  _04822_/y (al_aoi21ttf)          0.005566   0.087593   0.783115   15.091973 f
+  _04823_/y (al_nand2ft)           0.011167   0.113508   1.029410   16.121384 f
+  _04883_/y (al_ao21)              0.022241   0.180448   0.924093   17.045477 f
+  _04884_/y (al_ao21ttf)           0.016765   0.148379   1.047747   18.093224 f
+  _04888_/y (al_nand3)             0.000000   0.044752   1.061127   19.154350 r
+  g34972 (out)                                0.044752   0.000000   19.154350 r
+  data arrival time                                                 19.154350
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

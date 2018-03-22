@@ -1,0 +1,33 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s510
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:53 2018
+****************************************
+
+
+  Startpoint: _277_ (falling edge-triggered flip-flop)
+  Endpoint: csync (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _277_/clk (al_dffl)                         0.050000   0.000000   0.000000 f
+  _277_/q (al_dffl)                0.161773   0.921107   1.781283   1.781283 f
+  _161_/y (al_or2)                 0.022292   0.180667   1.489341   3.270623 f
+  _162_/y (al_nand3ftt)            0.130079   0.628922   1.486175   4.756799 r
+  _200_/y (al_ao21)                0.005544   0.073103   1.206831   5.963630 r
+  _205_/y (al_nand3)               0.000000   0.044047   0.735559   6.699189 f
+  csync (out)                                 0.044047   0.000000   6.699189 f
+  data arrival time                                                 6.699189
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

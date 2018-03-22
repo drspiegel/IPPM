@@ -1,0 +1,30 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s400
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:53 2018
+****************************************
+
+
+  Startpoint: _125_ (falling edge-triggered flip-flop)
+  Endpoint: RED2 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _125_/clk (al_dffl)                         0.050000   0.000000   0.000000 f
+  _125_/q (al_dffl)                0.005591   0.080876   1.197009   1.197009 f
+  _050_/y (al_inv)                 0.000000   0.044752   0.984332   2.181341 r
+  RED2 (out)                                  0.044752   0.000000   2.181341 r
+  data arrival time                                                 2.181341
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

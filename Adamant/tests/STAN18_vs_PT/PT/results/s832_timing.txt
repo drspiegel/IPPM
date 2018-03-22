@@ -1,0 +1,34 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s832
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:53 2018
+****************************************
+
+
+  Startpoint: _292_ (falling edge-triggered flip-flop)
+  Endpoint: G302 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _292_/clk (al_dffl)                         0.050000   0.000000   0.000000 f
+  _292_/q (al_dffl)                0.178569   1.010602   1.835439   1.835439 f
+  _135_/y (al_nand3ftt)            0.016750   0.130337   1.535190   3.370629 r
+  _137_/y (al_aoi21)               0.011181   0.122711   1.018201   4.388830 f
+  _139_/y (al_ao21ftt)             0.005576   0.078744   0.832608   5.221437 f
+  _140_/y (al_ao21ftf)             0.005544   0.073088   0.769474   5.990911 r
+  _150_/y (al_nand3)               0.000000   0.044047   0.735551   6.726462 f
+  G302 (out)                                  0.044047   0.000000   6.726462 f
+  data arrival time                                                 6.726462
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

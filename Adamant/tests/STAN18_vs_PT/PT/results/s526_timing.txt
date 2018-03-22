@@ -1,0 +1,29 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s526
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:53 2018
+****************************************
+
+
+  Startpoint: _159_ (falling edge-triggered flip-flop)
+  Endpoint: G199 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _159_/clk (al_dffl)                         0.050000   0.000000   0.000000 f
+  _159_/q (al_dffl)                0.005603   0.080950   1.197081   1.197081 f
+  G199 (out)                                  0.080950   0.000000   1.197081 f
+  data arrival time                                                 1.197081
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

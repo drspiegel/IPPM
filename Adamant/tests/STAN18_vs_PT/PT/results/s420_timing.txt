@@ -1,0 +1,35 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s420
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:53 2018
+****************************************
+
+
+  Startpoint: _170_ (falling edge-triggered flip-flop)
+  Endpoint: Z (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _170_/clk (al_dffl)                         0.050000   0.000000   0.000000 f
+  _170_/q (al_dffl)                0.044631   0.301452   1.384317   1.384317 f
+  _138_/y (al_and3fft)             0.011098   0.117523   1.089489   2.473806 r
+  _139_/y (al_nand3)               0.005559   0.078634   0.793839   3.267645 f
+  _143_/y (al_nand3)               0.005597   0.073346   1.043699   4.311345 r
+  _145_/y (al_ao21ftt)             0.005554   0.073138   0.836055   5.147399 r
+  _146_/y (al_ao21ftf)             0.005554   0.073140   0.902928   6.050328 r
+  _154_/y (al_ao21)                0.000000   0.044771   0.873688   6.924016 r
+  Z (out)                                     0.044771   0.000000   6.924016 r
+  data arrival time                                                 6.924016
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

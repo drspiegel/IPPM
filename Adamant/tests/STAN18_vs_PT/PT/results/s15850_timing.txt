@@ -1,0 +1,48 @@
+Warning: Some timing arcs have been disabled for breaking timing loops
+	or because of constant propagation. Use the 'report_disable_timing'
+	command to get the list of these disabled timing arcs. (PTE-003)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s15850
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:49 2018
+****************************************
+
+
+  Startpoint: g42 (input port)
+  Endpoint: g11163 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  input external delay                                   0.000000   0.000000 f
+  g42 (in)                         0.022301   0.050000   0.000000   0.000000 f
+  _1457_/y (al_nand3fft)           0.094704   0.564704   1.398555   1.398555 f
+  _1458_/y (al_or3)                0.022333   0.180950   1.349574   2.748129 f
+  _1459_/y (al_or3)                0.005580   0.078762   1.105587   3.853716 f
+  _1463_/y (al_and3)               0.011140   0.122130   0.762846   4.616562 f
+  _1542_/y (al_and3ftt)            0.005580   0.087456   1.038308   5.654870 f
+  _1543_/y (al_and3)               0.011157   0.122235   0.767811   6.422681 f
+  _1547_/y (al_nand3)              0.022221   0.156475   0.875060   7.297741 r
+  _1577_/y (al_nand3)              0.172335   0.977514   1.690521   8.988262 f
+  _1656_/y (al_ao21ttf)            0.011170   0.113564   1.451180   10.439443 f
+  _1738_/y (al_aoi21ttf)           0.005566   0.087592   0.745479   11.184921 f
+  _1739_/y (al_nand2ft)            0.011166   0.113505   1.029406   12.214327 f
+  _1748_/y (al_nand3ftt)           0.011139   0.101669   0.816361   13.030688 r
+  _1749_/y (al_and2)               0.011141   0.117746   1.036338   14.067026 r
+  _1750_/y (al_oa21ttf)            0.122218   0.713145   1.286265   15.353292 f
+  _1752_/y (al_nor3fft)            0.005558   0.086900   1.004849   16.358141 r
+  _1754_/y (al_nand2ft)            0.000000   0.044738   0.973202   17.331343 r
+  g11163 (out)                                0.044738   0.000000   17.331343 r
+  data arrival time                                                 17.331343
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

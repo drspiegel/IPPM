@@ -1,0 +1,29 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s298
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:49 2018
+****************************************
+
+
+  Startpoint: _103_ (falling edge-triggered flip-flop)
+  Endpoint: G118 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _103_/clk (al_dffl)                         0.050000   0.000000   0.000000 f
+  _103_/q (al_dffl)                0.011168   0.115566   1.231121   1.231121 f
+  G118 (out)                                  0.115566   0.000000   1.231121 f
+  data arrival time                                                 1.231121
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

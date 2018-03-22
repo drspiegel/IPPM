@@ -1,0 +1,33 @@
+****************************************
+ Report : static timing
+         -path 1
+         -delay max
+         -type nworst
+         -transition_time
+         -capacitance
+ Design : s420
+ Version: STAN18.0.0.1
+ Date   : 18/21/03 13:05:04
+****************************************
+
+Startpoint: _170_/clk (internal path startpoint)
+Endpoint: Z (output port)
+Path Group: (none)
+Path Type: max
+
+Point                                      Cap        Trans      Incr       Path
+-------------------------------------------------------------------------------------
+_170_/clk (al_dffl)                                  0.050000   0.000000   0.000000 f
+_170_/q (al_dffl)                         0.044631   0.301397   1.384317   1.384317 f
+_138_/y (al_and3fft)                      0.011098   0.117523   1.089460   2.473777 r
+_139_/y (al_nand3)                        0.005559   0.078634   0.793839   3.267616 f
+_143_/y (al_nand3)                        0.005597   0.073346   1.043699   4.311315 r
+_145_/y (al_ao21ftt)                      0.005554   0.073138   0.836055   5.147370 r
+_146_/y (al_ao21ftf)                      0.005554   0.073140   0.902929   6.050298 r
+_154_/y (al_ao21)                         0.000000   0.044771   0.873688   6.923986 r
+Z (out)                                              0.044771   0.000000   6.923986 r
+data arrival time                                                          6.923986
+-------------------------------------------------------------------------------------
+(Path is unconstrained)
+Path slack during path traversal = -6.923986 ERROR DETECTED !!!!
+

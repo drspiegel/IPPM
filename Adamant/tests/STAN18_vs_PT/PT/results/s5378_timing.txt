@@ -1,0 +1,41 @@
+Warning: Some timing arcs have been disabled for breaking timing loops
+	or because of constant propagation. Use the 'report_disable_timing'
+	command to get the list of these disabled timing arcs. (PTE-003)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s5378
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:53 2018
+****************************************
+
+
+  Startpoint: _1339_ (falling edge-triggered flip-flop)
+  Endpoint: n3143gat (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _1339_/clk (al_dffl)                        0.050000   0.000000   0.000000 f
+  _1339_/q (al_dffl)               0.061309   0.389491   1.446068   1.446068 f
+  _1060_/y (al_and3ftt)            0.027884   0.218536   1.309506   2.755574 f
+  _1112_/y (al_nand2ft)            0.005544   0.072881   0.845152   3.600726 r
+  _1113_/y (al_ao21ftf)            0.005591   0.078845   0.769269   4.369995 f
+  _1116_/y (al_nand3fft)           0.005577   0.078739   1.051661   5.421656 f
+  _1117_/y (al_nand2)              0.005544   0.072949   0.768174   6.189830 r
+  _1118_/y (al_nand3fft)           0.005562   0.078646   0.769184   6.959014 f
+  _1119_/y (al_ao21ttf)            0.005562   0.078669   0.923594   7.882607 f
+  _1125_/y (al_aoi21)              0.011082   0.117586   0.902922   8.785529 r
+  _1127_/y (al_nand3)              0.000000   0.044047   1.019753   9.805282 f
+  n3143gat (out)                              0.044047   0.000000   9.805282 f
+  data arrival time                                                 9.805282
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

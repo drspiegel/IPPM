@@ -1,0 +1,31 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-transition_time
+	-capacitance
+Design : s344
+Version: C-2009.06-SP1
+Date   : Wed Mar 21 12:25:49 2018
+****************************************
+
+
+  Startpoint: _120_ (falling edge-triggered flip-flop)
+  Endpoint: CNTVCON2 (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                 Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  _120_/clk (al_dffl)                         0.050000   0.000000   0.000000 f
+  _120_/q (al_dffl)                0.033418   0.241839   1.339170   1.339170 f
+  _055_/y (al_and3)                0.011182   0.122402   1.140594   2.479765 f
+  _056_/y (al_inv)                 0.000000   0.044751   1.006043   3.485808 r
+  CNTVCON2 (out)                              0.044751   0.000000   3.485808 r
+  data arrival time                                                 3.485808
+  -----------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
